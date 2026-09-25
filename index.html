@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ABI STEP | Artificial Business Intelligence</title>
+
+  <meta
+    name="description"
+    content="ABI STEP - Artificial Business Intelligence. One Step Ahead. Always."
+  >
 
   <style>
     * {
@@ -12,14 +18,30 @@
       box-sizing: border-box;
     }
 
+    html,
     body {
-  font-family: Arial, Helvetica, sans-serif;
-  background:
-    radial-gradient(circle at 75% 35%, rgba(0, 153, 255, 0.10), transparent 32%),
-    linear-gradient(135deg, #ffffff 0%, #f7fbff 55%, #eef8ff 100%);
-  color: #062b5c;
-  min-height: 100vh;
-}
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(
+          circle at 75% 35%,
+          rgba(0, 153, 255, 0.10),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #f7fbff 55%,
+          #eef8ff 100%
+        );
+
+      color: #062b5c;
+      min-height: 100vh;
+    }
 
     .page {
       min-height: 100vh;
@@ -27,128 +49,112 @@
       flex-direction: column;
     }
 
+    /* TOP LOGO */
+
     header {
       width: 100%;
-      padding: 10px 7% 90px;
+      padding: 20px 5%;
       display: flex;
       align-items: center;
     }
 
-   .brand-logo {
-  width: 145px;
-  height: 145px;
-  object-fit: contain;
-  border-radius: 50%;
-  display: block;
-}
-
-   
-
-    main {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 80px 7% 40px;
-  text-align: center;
-}
-
-    .hero {
-      max-width: 950px;
+    .brand-logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 50%;
+      display: block;
     }
 
-    .badge {
-  display: inline-block;
-  padding: 9px 18px;
-  margin-bottom: 25px;
-  border: 1px solid rgba(7, 60, 117, .20);
-  border-radius: 30px;
-  background: rgba(8, 124, 193, .06);
-  color: #073c75;
-  letter-spacing: 2px;
-  font-size: 13px;
-}
+    /* MAIN HERO IMAGE */
 
-    h1 {
-      font-size: clamp(55px, 10vw, 110px);
-      line-height: .95;
-      letter-spacing: 4px;
-      margin-bottom: 22px;
+    .hero-image-section {
+      flex: 1;
+      width: 100%;
+      padding: 10px 4% 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    h1 span {
-      color: #55baff;
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 1500px;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0 15px 45px rgba(6, 43, 92, 0.10);
     }
 
-    h2 {
-      font-size: clamp(20px, 3vw, 34px);
-      font-weight: 400;
-      margin-bottom: 18px;
-    }
-
-    .slogan {
-      font-size: clamp(24px, 4vw, 42px);
-      font-weight: 700;
-      margin-bottom: 35px;
-    }
-
-    .line {
-      width: 90px;
-      height: 4px;
-      margin: 0 auto 35px;
-      background: #55baff;
-      border-radius: 10px;
-    }
-
-    .coming {
-      font-size: 15px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      opacity: .8;
-    }
+    /* FOOTER */
 
     footer {
+      width: 100%;
       text-align: center;
-      padding: 25px;
+      padding: 22px 20px;
       font-size: 13px;
-      opacity: .65;
+      color: #55708f;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+      .brand-logo {
+        width: 85px;
+        height: 85px;
+      }
+
+      .hero-image-section {
+        padding: 10px 3% 25px;
+      }
+
+      .hero-image {
+        border-radius: 12px;
+      }
+
+      footer {
+        font-size: 12px;
+        padding: 18px 10px;
+      }
     }
   </style>
 </head>
 
+
 <body>
+
   <div class="page">
 
     <header>
-     <img src="logo.jpg" alt="ABI STEP - Artificial Business Intelligence" class="brand-logo">
-   </header>
+      <img
+        src="logo.jpg"
+        alt="ABI STEP Logo"
+        class="brand-logo"
+      >
+    </header>
 
-    <main>
-      <section class="hero">
 
-        <div class="badge">THE NEXT STEP IN BUSINESS</div>
+    <main class="hero-image-section">
 
-        <h1>ABI <span>STEP</span></h1>
+      <img
+        src="ABIstep%20manrobot.png"
+        alt="ABI STEP - Artificial Business Intelligence"
+        class="hero-image"
+      >
 
-        <h2>Artificial Business Intelligence</h2>
-
-        <div class="line"></div>
-
-        <div class="slogan">
-          One Step Ahead. Always.
-        </div>
-
-        <div class="coming">
-          Something Intelligent Is Coming
-        </div>
-
-      </section>
     </main>
+
 
     <footer>
       © 2026 ABI STEP. All Rights Reserved.
     </footer>
 
   </div>
+
 </body>
 </html>
